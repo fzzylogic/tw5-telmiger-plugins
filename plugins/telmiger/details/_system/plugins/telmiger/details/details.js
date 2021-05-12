@@ -58,7 +58,7 @@ DetailsWidget.prototype.render = function(parent,nextSibling) {
 		// this.detailsClass += "tc-details";
 		this.detailsDomNode.setAttribute("class",this.detailsClass);
 	}
-	if(this.detailsOpen == "open") {
+	if(this.detailsOpen == "open" || this.getVariable("tv-tiddler-preview") === "yes") {
 		this.detailsDomNode.setAttribute("open","open");
 	}
 	if(this.detailsSummary !== "") {
